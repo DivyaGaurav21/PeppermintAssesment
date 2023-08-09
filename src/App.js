@@ -1,24 +1,23 @@
 import React from "react";
-import Footer from "./Components/Footer";
-import Cards from "./Components/Cards";
-import Products from "./Components/Products";
-import About from "./Components/About";
-import HomeImg from "./Components/HomeImg";
-import Navigation from "./Components/Navigation";
+import Home from "./components/Home";
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import NavProduct from "./components/NavProduct";
+import NavAbout from "./components/NavAbout";
+import NavCareer from "./components/NavCareer";
 
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <HomeImg />
-      <About />
-      <Products/>
-      <Cards/>
-      <Footer/>
-      <h1 className="text-3xl underline">
-    </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="career" element={<NavCareer />} />
+        <Route path="product" element={<NavProduct />} />
+        <Route path="about" element={<NavAbout />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

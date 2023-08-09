@@ -12,8 +12,8 @@ const HomeImg = () => {
                     className="w-full md:max-w-[60%] h-[100vh] object-center"
                 />
             </div>
-            <div className="absolute top-[80%] left-[45%]">
-                <button className="bg-slate-700 text-white hover:text-slate-700 hover:border-slate-700 hover:bg-white py-4 px-7 rounded-md border border-slate-700 text-2xl font-extrabold transition-colors duration-300">
+            <div className="absolute top-[80%] left-[30%] md:left-[45%]">
+                <button className="bg-slate-700 text-white hover:text-slate-700 hover:border-slate-700 hover:bg-white py-3 px-7 rounded-md border border-slate-700 text-2xl font-extrabold transition-colors duration-300">
                     EXPLORE
                 </button>
             </div>
