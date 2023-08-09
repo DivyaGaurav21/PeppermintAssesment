@@ -1,5 +1,6 @@
 import React from 'react';
 import CareerCard from './CareerCard';
+import { jobs } from '../staticData';
 
 const Career = () => {
     return (
@@ -16,7 +17,7 @@ const Career = () => {
             </div>
 
             <div className='bg-stone-100 w-[100%]'>
-                <CareerCard />
+                <CareerCard jobs={jobs} />
                 <p className='my-20 text-center'>“If you are excited about the prospect of building awesome tech and robots, we’d love to hear from you”. Please email us at: <a href='mailto:hr@getpeppermint.co' className='text-cyan-400 font-mono'>hr@getpeppermint.co</a>
                 </p>
             </div>

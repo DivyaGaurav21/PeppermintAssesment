@@ -1,17 +1,18 @@
 import React from 'react'
-import Products from '../reusableComponent/Products'
 import Navigation from '../reusableComponent/Navigation'
 import Footer from '../reusableComponent/Footer'
-import { products } from '../staticData'
+import Solution from '../reusableComponent/Solution'
+import { solutions } from '../staticData'
 
-const NavProduct = () => {
+const NavSolution = () => {
+
     return (
         <div>
             <Navigation />
-            <Products products={products} />
+            <Solution solutions={solutions} />
             <Footer />
         </div>
     )
 }
 
-export default NavProduct
+export default NavSolution;

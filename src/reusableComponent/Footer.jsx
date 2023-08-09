@@ -8,12 +8,12 @@ const Footer = () => {
                     {/* First Section */}
                     <div className="lg:w-1/3 mb-8 lg:mb-0">
                         <div className="flex flex-col items-center mb-4">
-                            <img src="https://getpeppermint.co/wp-content/uploads/2023/07/Final-logo-Peppermint-13.png" alt="Company Logo" className="w-48 h-48 mr-2" />
+                            <img src="https://getpeppermint.co/wp-content/uploads/2023/07/Final-logo-Peppermint-13.png" alt="Company Logo" className="w-48 h-72 mr-2" />
                             <div>
                                 <h3 className="text-lg font-semibold">Peppermint</h3>
-                                <p className='font-serif'><i class="fa-solid fa-location-crosshairs"></i> : Survey No 116, 3/1, opp. ShubhTej Mangal Karyalay, near Balaji Chowk, Jai Bhavani Nagar, Pashan, Pune, Maharashtra 411021</p>
-                                <p className="text-gray-300">Email:info@getpeppermint.co</p>
-                                <p className="text-gray-300">Contact:+91 89567 10044</p>
+                                <p className='font-serif'><i className="fa-solid fa-location-crosshairs"></i> : Survey No 116, 3/1, opp. ShubhTej Mangal Karyalay, near Balaji Chowk, Jai Bhavani Nagar, Pashan, Pune, Maharashtra 411021</p>
+                                <p className="text-gray-300"><i className="fa-regular fa-envelope"></i> Email:info@getpeppermint.co</p>
+                                <p className="text-gray-300"><i className="fa-solid fa-address-book"></i> Contact:+91 89567 10044</p>
                             </div>
                         </div>
                     </div>

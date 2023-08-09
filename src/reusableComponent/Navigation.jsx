@@ -12,9 +12,9 @@ const Navigation = () => {
     const navLinks = [
         { text: 'HOME', link: '/' },
         { text: 'ABOUT US', link: '/about' },
-        { text: 'SOLUTIONS', link: '#' },
+        { text: 'SOLUTIONS', link: '/solution' },
         { text: 'PRODUCTS', link: '/product' },
-        { text: 'CONTACT US', link: '#' },
+        { text: 'CONTACT US', link: '/contact' },
         { text: 'CAREERS', link: '/career' },
     ];
 
@@ -29,12 +29,12 @@ const Navigation = () => {
                 </div>
 
                 {/* Navigation Links */}
-                <div className={`md:flex ${isNavOpen ? 'flex flex-col' : 'hidden md:block'}`}>
+                <div className={`md:flex ${isNavOpen ? 'flex flex-col' : 'hidden md:block relative right-32'}`}>
                     {navLinks.map((link, index) => (
                         <NavLink
                             key={index}
                             to={link.link}
-                            className="mx-2 py-2 hover:text-teal-600 transition-colors duration-300"
+                            className="mx-2 py-2 hover:text-teal-600 text-sm transition-colors duration-300"
                         >
                             {link.text}
                         </NavLink>
@@ -43,7 +43,7 @@ const Navigation = () => {
 
                 {/* Social Links */}
                 <div className={`flex md:flex ${isNavOpen ? 'flex flex-col gap-4' : 'hidden md:block'}`}>
-                    <a href="" className="mx-1 text-white hover:text-teal-600" target='_blank'>
+                    <a href="/contact" className="mx-1 text-white hover:text-teal-600" target='_blank'>
                         <i className="fa-solid fa-search border-black border rounded-full p-2 hover:border-teal-600"></i>
                     </a>
 
@@ -66,7 +66,7 @@ const Navigation = () => {
                     className="md:hidden text-white hover:text-teal-600 relative z-100 w-100px m-7"
                     onClick={toggleNav}
                 >
-                    {isNavOpen ? <i class="fa-solid fa-xmark"></i> : <i class="fa-solid fa-bars"></i>}
+                    {isNavOpen ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
                 </button>
 
 

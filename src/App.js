@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavProduct from "./components/NavProduct";
 import NavAbout from "./components/NavAbout";
 import NavCareer from "./components/NavCareer";
+import NavSolution from "./components/NavSolution";
+import NavContact from "./components/NavContact";
 
 
 function App() {
@@ -15,7 +17,8 @@ function App() {
         <Route path="career" element={<NavCareer />} />
         <Route path="product" element={<NavProduct />} />
         <Route path="about" element={<NavAbout />} />
-
+        <Route path="solution" element={<NavSolution />} />
+        <Route path="contact" element={<NavContact />} />
       </Routes>
     </BrowserRouter>
   );

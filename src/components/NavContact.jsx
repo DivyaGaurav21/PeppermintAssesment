@@ -1,17 +1,16 @@
 import React from 'react'
-import Products from '../reusableComponent/Products'
 import Navigation from '../reusableComponent/Navigation'
 import Footer from '../reusableComponent/Footer'
-import { products } from '../staticData'
+import Contacts from '../reusableComponent/Contacts'
 
-const NavProduct = () => {
+const NavContact = () => {
     return (
         <div>
             <Navigation />
-            <Products products={products} />
+            <Contacts />
             <Footer />
         </div>
     )
 }
 
-export default NavProduct
+export default NavContact
