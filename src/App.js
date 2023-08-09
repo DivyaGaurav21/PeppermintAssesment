@@ -4,10 +4,13 @@ import Cards from "./Components/Cards";
 import Products from "./Components/Products";
 import About from "./Components/About";
 import HomeImg from "./Components/HomeImg";
+import Navigation from "./Components/Navigation";
+
+
 function App() {
   return (
     <div className="App">
-      <h1 className="bg-gray-600 py-6">NAVIGATION</h1>
+      <Navigation />
       <HomeImg />
       <About />
       <Products/>
