@@ -5,9 +5,10 @@ import About from '../reusableComponent/About'
 import Products from '../reusableComponent/Products'
 import HomeItemCard from '../reusableComponent/HomeItemCard'
 import Footer from '../reusableComponent/Footer'
-import { cards } from '../staticData'
+import { cards, solutions } from '../staticData'
 import { products } from '../staticData'
 import Contacts from '../reusableComponent/Contacts'
+import MainSolution from '../reusableComponent/solution/MainSolution'
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <About />
             <Products products={products} />
             <HomeItemCard cards={cards} />
+            <MainSolution solutions={solutions} />
             <Contacts />
             <Footer />
         </div>
